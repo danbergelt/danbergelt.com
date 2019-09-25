@@ -1,0 +1,10 @@
+.header-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 4rem;
+
+  .header-nav-link:nth-child(n+2) {
+    margin-left: 2rem;
+  }
+}

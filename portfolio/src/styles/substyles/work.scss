@@ -1,0 +1,17 @@
+.work-spacer {
+  display: flex;
+  justify-content: center;
+  padding: 4rem 0;
+
+  .piece-container {
+    text-align: center;
+    display: grid;
+    grid: repeat(2, 200px) / auto-flow 250px;
+
+    .piece {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}

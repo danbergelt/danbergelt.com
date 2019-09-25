@@ -3,7 +3,7 @@ import React from "react"
 const Availability = () => {
   return (
     <>
-      <section>Availability Goes Here</section>
+      <section className="availability">Availability Goes Here</section>
     </>
   )
 }

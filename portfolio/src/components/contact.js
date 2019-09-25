@@ -3,7 +3,7 @@ import React from "react"
 const Contact = () => {
   return (
     <>
-      <section>Contact Goes Here</section>
+      <section className="contact">Want to get in touch? Let's talk.</section>
     </>
   )
 }

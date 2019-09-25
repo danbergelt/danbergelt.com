@@ -6,9 +6,9 @@ const Nav = () => {
       <nav className="header-nav">
         <h1>{`<Dan />`}</h1>
         <div>
-          <span>Resume</span>
-          <span>Contact</span>
-          <span>Dark Mode</span>
+          <span className="header-nav-link">Resume</span>
+          <span className="header-nav-link">Contact</span>
+          <span className="header-nav-link">Dark Mode</span>
         </div>
       </nav>
     </header>
