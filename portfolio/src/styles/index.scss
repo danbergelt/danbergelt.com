@@ -1,10 +1,33 @@
-.header-nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between
-}
+.container {
+  width: 750px;
+  margin: 0 auto;
 
-.footer-nav {
-  display: flex;
-  justify-content: space-between;
+  .header-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+  }
+  
+  .footer-nav {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .work-spacer {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+
+    .piece-container {
+      text-align: center;
+      display: grid;
+      grid: repeat(2, 200px) / auto-flow 250px;
+
+      .piece {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
 }
