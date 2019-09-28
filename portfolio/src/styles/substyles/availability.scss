@@ -1,3 +1,19 @@
+@import '../variables.scss';
+
 .availability {
   margin-bottom: 2rem;
+  display: flex;
+  font-size: 2rem;
+  color: $main;
+
+  .availability-status {
+    color: $available;
+    margin-left: 1rem;
+    display: flex;
+    align-items: center;
+  }
+
+  .availability-icon{
+    margin-left: 0.5rem;
+  }
 }

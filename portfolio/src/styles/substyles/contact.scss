@@ -1,3 +1,17 @@
+@import '../variables.scss';
+
 .contact {
-  margin-bottom: 4rem;
+  margin-bottom: 8rem;
+  margin-top: 2rem;
+  font-size: 2rem;
+  color: $main;
+
+  .contact-cta {
+    color: $accent-two;
+    text-decoration: none;
+
+    &:hover {
+      color: rgba($accent-two, 0.8);
+    }
+  }
 }

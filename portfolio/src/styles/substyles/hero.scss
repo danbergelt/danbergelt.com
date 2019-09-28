@@ -1,3 +1,11 @@
+@import '../variables.scss';
+
 .hero {
-  margin-bottom: 4rem;
+  margin-bottom: 8rem;
+  font-size: 4rem;
+  color: $main;
+
+  #hero-highlight {
+    color: $primary;
+  }
 }

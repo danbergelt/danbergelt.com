@@ -5,12 +5,11 @@ const Footer = () => {
     <footer>
       <nav className="footer-nav">
         <div className="footer-icons">
-          <span>Github</span>
-          <span>LinkedIn</span>
-          <span>Email</span>
+          <a href="https://github.com/danbergelt" className="footer-nav-link">GitHub</a>
+          <a href="https://www.linkedin.com/in/danbergelt/" className="footer-nav-link">LinkedIn</a>
         </div>
         <div>
-          <span>Like this site? View the source code here!</span>
+          <a href="https://github.com/danbergelt/portfolio-site" id="site-source-link">Site source code</a>
         </div>
       </nav>
     </footer>
