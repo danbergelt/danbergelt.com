@@ -1,11 +1,19 @@
-import React from "react"
+import React, { useState } from "react"
 
-import { CheckCircle } from 'react-feather';
+import { CheckCircle, Slash } from 'react-feather';
 
 const Availability = () => {
+
+  const [availability, setAvailability] = useState(true);
+
   return (
     <>
-      <section className="availability">Available for contract work: <span className = "availability-status">Available {<CheckCircle className="availability-icon" />}</span></section>
+    {
+      availability === true ? 
+      <section className="availability">Available for contract work: <span className = "availability-status">Available {<CheckCircle className="availability-icon" size="2rem" />}</span></section>
+      :
+      <section className="availability">Available for contract work: <span className = "no-availability-status">Not Available {<Slash className="availability-icon" size="2rem" />}</span></section>
+    }
     </>
   )
 }

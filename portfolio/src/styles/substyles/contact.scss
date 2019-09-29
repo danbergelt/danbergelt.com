@@ -7,11 +7,11 @@
   color: $main;
 
   .contact-cta {
-    color: $accent-two;
+    color: $primary;
     text-decoration: none;
 
     &:hover {
-      color: rgba($accent-two, 0.8);
+      color: rgba($primary, 0.8);
     }
   }
 }

@@ -13,6 +13,13 @@
     align-items: center;
   }
 
+  .no-availability-status {
+    color: $not-available;
+    margin-left: 1rem;
+    display: flex;
+    align-items: center;
+  }
+
   .availability-icon{
     margin-left: 0.5rem;
   }
