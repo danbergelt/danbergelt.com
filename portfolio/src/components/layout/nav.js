@@ -2,17 +2,17 @@ import React from "react"
 
 import { Eye } from 'react-feather';
 
+import { Link } from 'gatsby';
+
 
 const Nav = () => {
 
   return (
     <header>
       <nav className="header-nav">
-        <h1 className="dan-icon">{`<Dan />`}</h1>
+        <Link className="home-link" to='/'><h1 className="dan-icon">{`<Dan />`}</h1></Link>
         <div className = "header-nav-link-container">
-          <span className="header-nav-link">Work</span>
-          <span className="header-nav-link">Contact</span>
-          <span className="header-nav-link">Resume</span>
+          <Link to='/about' className="header-nav-link">About</Link>
           <Eye className="header-nav-link eye"/>
         </div>
       </nav>

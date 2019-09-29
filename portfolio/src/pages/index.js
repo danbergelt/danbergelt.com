@@ -1,11 +1,11 @@
 import React from "react"
 
 // components
-import Layout from "../components/layout"
-import Hero from "../components/hero"
-import Availability from "../components/availability"
-import Work from "../components/work"
-import Contact from "../components/contact"
+import Layout from "../components/layout/layout"
+import Hero from "../components/home/hero"
+import Availability from "../components/home/availability"
+import Work from "../components/home/work"
+import Contact from "../components/home/contact"
 
 import "../styles/index.scss"
 
