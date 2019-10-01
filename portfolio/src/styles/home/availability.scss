@@ -24,3 +24,21 @@
     margin-left: 0.5rem;
   }
 }
+
+.dark-availability {
+  margin-bottom: 2rem;
+  display: flex;
+  font-size: 2rem;
+  color: $dark-text;
+
+  .dark-availability-status {
+    color: $dark-available;
+    margin-left: 1rem;
+    display: flex;
+    align-items: center;
+
+    .availability-icon{
+      margin-left: 0.5rem;
+    }
+  }
+}

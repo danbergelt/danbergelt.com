@@ -9,3 +9,13 @@
     color: $primary;
   }
 }
+
+.dark-hero {
+  margin-bottom: 8rem;
+  font-size: 4rem;
+  color: $dark-text;
+
+  #dark-hero-highlight {
+    color: $dark-primary;
+  }
+}

@@ -7,14 +7,15 @@ const Services = () => {
         <h1 className="about-header">Services</h1>
         <h3>Web Development</h3>
         <p>
-          Why do I love writing code? It allows me to build a totally customized
+          Why do I enjoy writing code? It allows me to build a totally customized
           product from the ground-up, using a wide array of tools and
-          technologies. Don't settle for average - tell me what you want, and
-          I'll make it happen.
+          technologies. The only limit in web development is your imagination.
+          Don't settle for average - tell me what you want, and I'll make it
+          happen.
         </p>
         <h3>Hosting</h3>
         <p>
-          A website is nothing withouta home, and I offer hosting solutions for
+          A website is nothing without a home, and I offer hosting solutions for
           all of my clients. And since you own all of the code I produce, if you
           ever want to migrate elsewhere, I make it easy.
         </p>
@@ -23,7 +24,7 @@ const Services = () => {
           Your website needs to be functional, but it also needs to be
           beautiful. Templated solutions are just that - templated - and your
           customers are savvy enough to recognize a pre-built website. I will
-          work alongside you to create an elegant, aesthetic website/web app you
+          work alongside you to create an elegant, subtle, fully bespoke website/web app that you
           will be proud to show your friends and family.
         </p>
       </section>

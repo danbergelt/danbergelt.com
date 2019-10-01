@@ -1,0 +1,12 @@
+@import '../variables.scss';
+
+#aboutme {
+  margin-bottom: 4rem;
+
+  #contact-link-about {
+    border-bottom: 5px solid $primary;
+    color: black;
+    text-decoration: none;
+
+  }
+}

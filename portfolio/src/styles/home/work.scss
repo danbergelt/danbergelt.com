@@ -1,0 +1,19 @@
+@import "../variables.scss";
+
+.work-spacer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 8rem 0 10rem 0;
+
+  .work-title {
+    color: $main;
+    padding-bottom: 8rem;
+  }
+
+  .piece-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+}

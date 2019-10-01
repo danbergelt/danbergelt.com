@@ -1,0 +1,12 @@
+#fav-tech {
+  margin-bottom: 8rem;
+
+  #tech-container {
+    display: flex;
+    flex-flow: row wrap;
+
+    .tech {
+      margin-right: 1rem;
+    }
+  }
+}

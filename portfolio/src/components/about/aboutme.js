@@ -19,7 +19,7 @@ const AboutMe = () => {
           you through your digital journey.
         </p>
         <p>
-          Want to learn more? Contact me here - I look forward to hearing from
+          Want to learn more? <a href="mailto: danbergelt@protonmail.com" id="contact-link-about">Contact me here</a> - I look forward to hearing from
           you.
         </p>
       </section>

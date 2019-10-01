@@ -1,5 +1,7 @@
 import React from "react"
 
+import { DarkProvider } from "../context/context"
+
 // components
 import Layout from "../components/layout/layout"
 import Hero from "../components/home/hero"
@@ -11,13 +13,13 @@ import "../styles/index.scss"
 
 export default () => {
   return (
-    <div className="container">
+    <DarkProvider>
       <Layout>
         <Hero />
         <Availability />
         <Work />
         <Contact />
       </Layout>
-    </div>
+    </DarkProvider>
   )
 }

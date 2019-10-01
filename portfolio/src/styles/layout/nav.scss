@@ -28,11 +28,29 @@
     }
   }
 
+  .dan-icon-dark {
+    color: $dark-hover;
+    font-size: 2.2rem;
+
+    &:visited {
+      color: $dark-hover;
+    }
+
+    &:active {
+      color: white;
+    }
+
+    &:hover {
+      color: white;
+      cursor: pointer;
+    }
+  }
+
   .header-nav-link-container {
     display: flex;
     align-items: center;
 
-    .header-nav-link {
+    .header-nav-link, .dark-header-nav-link {
       cursor: pointer;
       font-size: 1.2rem;
       text-decoration: none;
@@ -56,6 +74,26 @@
       &:active {
         color: black;
       }
+    }
+
+    .dark-header-nav-link:nth-child(1) {
+      color: $dark-text;
+
+      &:visited {
+        color: $dark-text;
+      }
+
+      &:active {
+        color: $dark-hover;
+      }
+
+      &:hover {
+        color: $dark-hover;
+      }
+    }
+
+    .dark-eye {
+      color: white;
     }
   }
 }
