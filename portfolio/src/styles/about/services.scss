@@ -3,7 +3,15 @@
 #services {
   margin-bottom: 4rem;
 
+  .dark-services-subhead {
+    color: $dark-hover;
+  }
+
   h3 {
     color: $main;
+  }
+
+  .dark-services-content {
+    color: $dark-text;
   }
 }

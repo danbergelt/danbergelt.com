@@ -1,3 +1,5 @@
+@import '../variables.scss';
+
 #fav-tech {
   margin-bottom: 8rem;
 
@@ -7,6 +9,11 @@
 
     .tech {
       margin-right: 1rem;
+    }
+
+    .dark-tech {
+      margin-right: 1rem;
+      color: $dark-hover;
     }
   }
 }
