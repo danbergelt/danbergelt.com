@@ -1,15 +1,34 @@
-import React from "react"
+import React, { useContext } from "react"
+
+import { DarkContext } from "../../context/context"
 
 const Footer = () => {
+  const [dark, setDark] = useContext(DarkContext)
+
   return (
     <footer>
       <nav className="footer-nav">
         <div className="footer-icons">
-          <a href="https://github.com/danbergelt" className="footer-nav-link">GitHub</a>
-          <a href="https://www.linkedin.com/in/danbergelt/" className="footer-nav-link">LinkedIn</a>
+          <a
+            href="https://github.com/danbergelt"
+            className={dark ? "dark-footer-nav-link" : "footer-nav-link"}
+          >
+            GitHub
+          </a>
+          <a
+            href="https://www.linkedin.com/in/danbergelt/"
+            className={dark ? "dark-footer-nav-link" : "footer-nav-link"}
+          >
+            LinkedIn
+          </a>
         </div>
         <div>
-          <a href="https://github.com/danbergelt/portfolio-site" id="site-source-link">Site source code</a>
+          <a
+            href="https://github.com/danbergelt/portfolio-site"
+            id={dark ? "dark-site-source-link" : "site-source-link"}
+          >
+            Site source code
+          </a>
         </div>
       </nav>
     </footer>

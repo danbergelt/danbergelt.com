@@ -15,3 +15,19 @@
     }
   }
 }
+
+.dark-contact {
+  margin-bottom: 8rem;
+  margin-top: 2rem;
+  font-size: 2rem;
+  color: $dark-text;
+
+  .dark-contact-cta {
+    color: $dark-primary;
+    text-decoration: none;
+
+    &:hover {
+      color: lighten($dark-primary, 15%);
+    }
+  }
+}

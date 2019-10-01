@@ -1,20 +1,25 @@
-import React from "react"
+import React, { useContext } from "react"
 
 import { GitHub } from "react-feather"
 
+import { DarkContext } from "../../context/context"
+
 const Piece = ({ name, desc, github, site }) => {
+
+  const [dark, setDark] = useContext(DarkContext)
+
   return (
-    <div className="piece">
+    <div className={dark ? 'dark-piece' : 'piece'}>
       <div className="piece-content-container">
-        <h3 className="piece-title">{name}</h3>
-        <p className="piece-desc">{desc}</p>
+        <h3 className={dark ? 'dark-piece-title' : 'piece-title'}>{name}</h3>
+        <p className={dark && 'dark-piece-desc'}>{desc}</p>
       </div>
       <div className="piece-buttons">
         <div className="piece-left-buttons">
-          <a href={github} className="piece-gh">
+          <a href={github} className={dark ? 'dark-piece-gh' : 'piece-gh'}>
             <GitHub size="24" />
           </a>
-          <a href={site} className="piece-site">
+          <a href={site} className={dark ? 'dark-piece-site' : 'piece-site'}>
             Site
           </a>
         </div>

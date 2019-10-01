@@ -1,9 +1,19 @@
-import React from "react"
+import React, { useContext } from "react"
+
+import { DarkContext } from "../../context/context"
 
 const Contact = () => {
+
+  const [dark, setDark] = useContext(DarkContext)
+
   return (
     <>
-      <section className="contact">Want to get in touch? <a className="contact-cta" href="mailto:danbergelt@protonmail.com">Let's talk.</a></section>
+      <section className={dark ? 'dark-contact' : 'contact'}>
+        Want to get in touch?{" "}
+        <a className={dark ? 'dark-contact-cta' : 'contact-cta'} href="mailto:danbergelt@protonmail.com">
+          Let's talk.
+        </a>
+      </section>
     </>
   )
 }
