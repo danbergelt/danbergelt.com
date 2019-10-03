@@ -1,6 +1,4 @@
-import React, { useState, createContext, useEffect } from 'react';
-
-import { checkDark } from '../utils/darkmode';
+import React, { useState, createContext } from 'react';
 
 export const DarkContext = createContext();
 

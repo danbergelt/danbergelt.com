@@ -1,8 +1,12 @@
-import React from "react"
+import React, { useContext }  from "react"
 
 import { GitHub } from "react-feather"
 
-const Piece = ({ name, desc, dark }) => {
+import { DarkContext } from "../../context/context"
+
+const Piece = ({ name, desc }) => {
+
+  const [dark] = useContext(DarkContext)
 
   return (
     <div className={dark ? 'dark-piece' : 'piece'}>

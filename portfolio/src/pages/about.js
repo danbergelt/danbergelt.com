@@ -1,5 +1,4 @@
-import React, { useContext } from "react"
-import { DarkContext } from '../context/context'
+import React from "react"
 import { DarkProvider } from "../context/context"
 
 import Layout from "../components/layout/layout"
@@ -9,14 +8,12 @@ import FavTech from "../components/about/favtech"
 
 export default () => {
 
-  const [dark] = useContext(DarkContext)
-
   return (
     <DarkProvider>
-      <Layout dark={dark} >
-        <AboutMe dark={dark} />
-        <Services dark={dark} />
-        <FavTech dark={dark} />
+      <Layout>
+        <AboutMe/>
+        <Services/>
+        <FavTech/>
       </Layout>
     </DarkProvider>
   )

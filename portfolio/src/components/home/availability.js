@@ -1,10 +1,14 @@
-import React, { useState } from "react"
+import React, { useState, useContext } from "react"
+
+import { DarkContext } from "../../context/context"
 
 import { CheckCircle, Slash } from "react-feather"
 
-const Availability = ({ dark }) => {
+const Availability = () => {
   
   const [availability] = useState(true)
+
+  const [dark] = useContext(DarkContext)
 
   return (
     <>

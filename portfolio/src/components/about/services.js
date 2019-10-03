@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 
-import { DarkContext } from "../../context/context";
+import { DarkContext } from "../../context/context"
 
 const Services = () => {
 

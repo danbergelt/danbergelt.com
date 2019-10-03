@@ -1,6 +1,10 @@
-import React from "react"
+import React, { useContext }  from "react"
 
-const Hero = ({ dark }) => {
+import { DarkContext } from "../../context/context"
+
+const Hero = () => {
+
+  const [dark] = useContext(DarkContext)
 
   return (
     <>

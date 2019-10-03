@@ -1,6 +1,10 @@
-import React from "react";
+import React, { useContext } from "react";
 
-const AboutMe = ({ dark }) => {
+import { DarkContext } from "../../context/context"
+
+const AboutMe = () => {
+
+  const [dark] = useContext(DarkContext)
 
   return (
     <div className="about-container">

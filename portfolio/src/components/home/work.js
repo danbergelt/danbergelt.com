@@ -1,8 +1,13 @@
-import React from "react"
+import React, { useContext }  from "react"
+
+import { DarkContext } from "../../context/context"
 
 import Piece from "./piece"
 
-const Work = ({ dark }) => {
+const Work = () => {
+
+  const [dark] = useContext(DarkContext)
+
   return (
     <div className="work-spacer">
       <h1 className={dark ? "dark-work-title" : "work-title"}>
