@@ -14,7 +14,8 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Helmet>
+      <Helmet title={`Dan Bergelt | Developer`}>
+        <meta name="description" content="Dan Bergelt, Software Developer in New York City."/>
         <link rel="icon" href={favicon} />
       </Helmet>
       <div className={dark ? "master" : null}>
