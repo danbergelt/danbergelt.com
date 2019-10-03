@@ -1,10 +1,6 @@
-import React, { useContext } from "react"
+import React from "react"
 
-import { DarkContext } from "../../context/context"
-
-const Contact = () => {
-
-  const [dark, setDark] = useContext(DarkContext)
+const Contact = ({ dark }) => {
 
   return (
     <>

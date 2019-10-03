@@ -1,12 +1,8 @@
-import React, { useContext } from "react"
+import React from "react"
 
 import { GitHub } from "react-feather"
 
-import { DarkContext } from "../../context/context"
-
-const Piece = ({ name, desc, github, site }) => {
-
-  const [dark, setDark] = useContext(DarkContext)
+const Piece = ({ name, desc, dark }) => {
 
   return (
     <div className={dark ? 'dark-piece' : 'piece'}>
@@ -16,10 +12,10 @@ const Piece = ({ name, desc, github, site }) => {
       </div>
       <div className="piece-buttons">
         <div className="piece-left-buttons">
-          <a href={github} className={dark ? 'dark-piece-gh' : 'piece-gh'}>
+          <a href="#" className={dark ? 'dark-piece-gh' : 'piece-gh'}>
             <GitHub size="24" />
           </a>
-          <a href={site} className={dark ? 'dark-piece-site' : 'piece-site'}>
+          <a href="#" className={dark ? 'dark-piece-site' : 'piece-site'}>
             Site
           </a>
         </div>

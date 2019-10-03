@@ -9,6 +9,7 @@ import { addDark, removeDark } from "../../utils/darkmode"
 import { DarkContext } from "../../context/context"
 
 const Nav = () => {
+  
   const [dark, setDark] = useContext(DarkContext)
 
   const darkMode = () => {

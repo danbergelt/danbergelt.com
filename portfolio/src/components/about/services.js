@@ -4,7 +4,7 @@ import { DarkContext } from "../../context/context";
 
 const Services = () => {
 
-  const [dark, setDark] = useContext(DarkContext)
+  const [dark] = useContext(DarkContext)
 
   return (
     <div className="about-container">
