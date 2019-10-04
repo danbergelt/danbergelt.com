@@ -1,23 +1,18 @@
 @import '../variables.scss';
+@import '../mixins.scss';
 
 .availability {
-  margin-bottom: 2rem;
-  display: flex;
-  font-size: 2rem;
+  @include availability;
   color: $main;
 
   .availability-status {
     color: $available;
-    margin-left: 1rem;
-    display: flex;
-    align-items: center;
+    @include availability-status;
   }
 
   .no-availability-status {
     color: $not-available;
-    margin-left: 1rem;
-    display: flex;
-    align-items: center;
+    @include availability-status;
   }
 
   .availability-icon{
@@ -26,16 +21,12 @@
 }
 
 .dark-availability {
-  margin-bottom: 2rem;
-  display: flex;
-  font-size: 2rem;
+  @include availability;
   color: $dark-text;
 
   .dark-availability-status {
     color: $dark-available;
-    margin-left: 1rem;
-    display: flex;
-    align-items: center;
+    @include availability-status;
 
     .availability-icon{
       margin-left: 0.5rem;

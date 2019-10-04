@@ -1,8 +1,8 @@
 @import '../variables.scss';
+@import '../mixins.scss';
 
 .hero {
-  margin-bottom: 8rem;
-  font-size: 4rem;
+  @include hero;
   color: $main;
 
   #hero-highlight {
@@ -11,8 +11,7 @@
 }
 
 .dark-hero {
-  margin-bottom: 8rem;
-  font-size: 4rem;
+  @include hero;
   color: $dark-text;
 
   #dark-hero-highlight {

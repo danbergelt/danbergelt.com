@@ -3,6 +3,7 @@ import React, { useContext } from "react"
 import { DarkContext } from "../../context/context"
 
 const Footer = () => {
+  
   const [dark] = useContext(DarkContext)
 
   return (

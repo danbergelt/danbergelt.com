@@ -1,0 +1,87 @@
+@import './variables.scss';
+
+// availability mixins
+
+@mixin availability {
+  margin-bottom: 2rem;
+  display: flex;
+  font-size: 2rem;
+}
+
+@mixin availability-status {
+  margin-left: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+// contact mixins
+
+@mixin contact {
+  margin-bottom: 8rem;
+  margin-top: 2rem;
+  font-size: 2rem;
+}
+
+// hero mixins
+
+@mixin hero {
+  margin-bottom: 8rem;
+  font-size: 4rem;
+}
+
+// piece mixins
+
+@mixin piece {
+  margin: 1rem;
+  width: 250px;
+  height: 250px;
+  box-shadow: 0 2px 10px 0px rgba(0, 0, 0, 0.25);
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+@mixin piece-content-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 1rem;
+}
+
+@mixin piece-buttons {
+  margin: 0 1rem 1rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin gh {
+  margin-right: 0.5rem;
+  display: flex;
+  align-self: flex-end;
+}
+
+@mixin piece-site {
+  padding: 0.15rem 0.5rem;
+  border-radius: 15%;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+@mixin learn {
+  color: $accent-two;
+  text-decoration: none;
+  padding: 0.15rem 0.5rem;
+  border: 2px solid $accent-two;
+  border-radius: 15%;
+  font-size: 0.9rem;
+
+  &:hover {
+    color: white;
+    background-color: $accent-two;
+    cursor: pointer;
+  }
+
+  &:active {
+    color: white;
+  }
+}

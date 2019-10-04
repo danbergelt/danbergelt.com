@@ -12,7 +12,7 @@ const Piece = ({ name, desc }) => {
     <div className={dark ? 'dark-piece' : 'piece'}>
       <div className="piece-content-container">
         <h3 className={dark ? 'dark-piece-title' : 'piece-title'}>{name}</h3>
-        <p className={dark && 'dark-piece-desc'}>{desc}</p>
+        <p className={dark ? 'dark-piece-desc' : null}>{desc}</p>
       </div>
       <div className="piece-buttons">
         <div className="piece-left-buttons">

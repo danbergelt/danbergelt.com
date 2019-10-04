@@ -1,9 +1,8 @@
 @import '../variables.scss';
+@import '../mixins.scss';
 
 .contact {
-  margin-bottom: 8rem;
-  margin-top: 2rem;
-  font-size: 2rem;
+  @include contact;
   color: $main;
 
   .contact-cta {
@@ -17,9 +16,7 @@
 }
 
 .dark-contact {
-  margin-bottom: 8rem;
-  margin-top: 2rem;
-  font-size: 2rem;
+  @include contact;
   color: $dark-text;
 
   .dark-contact-cta {

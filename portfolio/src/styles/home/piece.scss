@@ -1,23 +1,14 @@
 @import "../variables.scss";
+@import "../mixins.scss";
+
+// DARK MODE PIECE STYLES
 
 .dark-piece {
-  margin: 1rem;
-  width: 250px;
-  height: 250px;
-  box-shadow: 0 2px 10px 0px rgba(0, 0, 0, 0.25);
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
+  @include piece; 
   background: $dark-piece;
 
   .piece-content-container {
-    display: flex;
-    flex-direction: column;
-    margin: 0 1rem;
-
-    .piece-title {
-      color: $main;
-    }
+    @include piece-content-container;
 
     .dark-piece-title {
       color: $dark-hover;
@@ -28,69 +19,21 @@
     }
   }
   .piece-buttons {
-    margin: 0 1rem 1rem 1rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include piece-buttons;
 
     .piece-left-buttons {
       display: flex;
     }
 
-    .piece-gh {
-      color: $primary;
-      margin-right: 0.5rem;
-      display: flex;
-      align-self: flex-end;
-
-      &:hover {
-        cursor: pointer;
-      }
-
-      &:active {
-        color: $primary;
-      }
-    }
-
     .dark-piece-gh {
       color: $dark-primary;
-      margin-right: 0.5rem;
-      display: flex;
-      align-self: flex-end;
-
-      &:hover {
-        cursor: pointer;
-      }
-
-      &:active {
-        color: $dark-primary;
-      }
-    }
-
-    .piece-site {
-      color: $primary;
-      padding: 0.15rem 0.5rem;
-      border: 2px solid $primary;
-      border-radius: 15%;
-      font-size: 0.9rem;
-
-      &:hover {
-        color: white;
-        background-color: $primary;
-        cursor: pointer;
-      }
-
-      &:active {
-        color: white;
-      }
+      @include gh;
     }
 
     .dark-piece-site {
       color: $dark-primary;
-      padding: 0.15rem 0.5rem;
       border: 2px solid $dark-primary;
-      border-radius: 15%;
-      font-size: 0.9rem;
+      @include piece-site;
 
       &:hover {
         color: white;
@@ -106,58 +49,26 @@
     .piece-right-buttons {
 
       .piece-learn {
-        color: $accent-two;
-        text-decoration: none;
-        padding: 0.15rem 0.5rem;
-        border: 2px solid $accent-two;
-        border-radius: 15%;
-        font-size: 0.9rem;
-
-        &:hover {
-          color: white;
-          background-color: $accent-two;
-          cursor: pointer;
-        }
-
-        &:active {
-          color: white;
-        }
+        @include learn;
       }
     }
   }
 }
 
+// LIGHT MODE PIECE STYLES
+
 .piece {
-  margin: 1rem;
-  width: 250px;
-  height: 250px;
-  box-shadow: 0 2px 10px 0px rgba(0, 0, 0, 0.25);
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
+  @include piece;
 
   .piece-content-container {
-    display: flex;
-    flex-direction: column;
-    margin: 0 1rem;
+    @include piece-content-container;
 
     .piece-title {
       color: $main;
     }
-
-    .dark-piece-title {
-      color: $dark-hover;
-    }
-
-    .dark-piece-desc {
-      color: $dark-text;
-    }
   }
   .piece-buttons {
-    margin: 0 1rem 1rem 1rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include piece-buttons;
 
     .piece-left-buttons {
       display: flex;
@@ -165,9 +76,7 @@
 
     .piece-gh {
       color: $primary;
-      margin-right: 0.5rem;
-      display: flex;
-      align-self: flex-end;
+      @include gh;
 
       &:hover {
         cursor: pointer;
@@ -178,27 +87,10 @@
       }
     }
 
-    .dark-piece-gh {
-      color: $dark-primary;
-      margin-right: 0.5rem;
-      display: flex;
-      align-self: flex-end;
-
-      &:hover {
-        cursor: pointer;
-      }
-
-      &:active {
-        color: $dark-primary;
-      }
-    }
-
     .piece-site {
       color: $primary;
-      padding: 0.15rem 0.5rem;
       border: 2px solid $primary;
-      border-radius: 15%;
-      font-size: 0.9rem;
+      @include piece-site;
 
       &:hover {
         color: white;
@@ -211,43 +103,10 @@
       }
     }
 
-    .dark-piece-site {
-      color: $dark-primary;
-      padding: 0.15rem 0.5rem;
-      border: 2px solid $dark-primary;
-      border-radius: 15%;
-      font-size: 0.9rem;
-
-      &:hover {
-        color: white;
-        background-color: $dark-primary;
-        cursor: pointer;
-      }
-
-      &:active {
-        color: white;
-      }
-    }
-
     .piece-right-buttons {
 
       .piece-learn {
-        color: $accent-two;
-        text-decoration: none;
-        padding: 0.15rem 0.5rem;
-        border: 2px solid $accent-two;
-        border-radius: 15%;
-        font-size: 0.9rem;
-
-        &:hover {
-          color: white;
-          background-color: $accent-two;
-          cursor: pointer;
-        }
-
-        &:active {
-          color: white;
-        }
+        @include learn;
       }
     }
   }
