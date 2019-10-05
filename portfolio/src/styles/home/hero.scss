@@ -5,6 +5,10 @@
   @include hero;
   color: $main;
 
+  @media (max-width: 750px) {
+    font-size: 2.5rem;
+  }
+
   #hero-highlight {
     color: $primary;
   }
@@ -13,6 +17,10 @@
 .dark-hero {
   @include hero;
   color: $dark-text;
+
+  @media (max-width: 750px) {
+    font-size: 2.5rem;
+  }
 
   #dark-hero-highlight {
     color: $dark-primary;

@@ -21,14 +21,14 @@ const Availability = () => {
             }
           >
             Available{" "}
-            {<CheckCircle className="availability-icon" size="2rem" />}
+            {<CheckCircle className="availability-icon" />}
           </span>
         </section>
       ) : (
         <section className="availability">
           Available for contract work:{" "}
           <span className="no-availability-status">
-            Not Available {<Slash className="availability-icon" size="2rem" />}
+            Not Available {<Slash className="availability-icon" />}
           </span>
         </section>
       )}

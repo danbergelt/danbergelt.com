@@ -13,10 +13,22 @@ body {
 .container {
   margin: 0 8rem;
   font-family: "Montserrat";
+
+  @media (max-width: 750px) {
+    margin: 0 4rem;
+  }
+
+  @media (max-width: 400px) {
+    margin: 0 1.5rem;
+  }
 }
 
 .about-container {
   width: 75%;
+
+  @media (max-width: 750px) {
+    width: 90%;
+  }
 
   .about-header {
     font-size: 3rem;

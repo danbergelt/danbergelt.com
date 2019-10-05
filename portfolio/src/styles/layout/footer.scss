@@ -6,6 +6,18 @@
   padding-bottom: 2rem;
   font-size: 1.2rem;
 
+  @media (max-width: 750px) {
+    flex-direction: column;
+    
+  }
+
+  .footer-icons {
+    @media (max-width: 750px) {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
   .footer-nav-link {
     text-decoration: none;
     color: $nav-link;
