@@ -33,7 +33,7 @@
   }
 
   .dan-icon-dark {
-    color: $dark-hover;
+    color: $dark-text;
     font-size: 2.2rem;
 
     @media (max-width: 750px) {
@@ -41,7 +41,7 @@
     }
 
     &:visited {
-      color: $dark-hover;
+      color: $dark-text;
     }
 
     &:active {
@@ -65,7 +65,7 @@
       color: $main;
     }
     .dark-eye {
-      color: white;
+      color: $dark-text;
     }
   }
 }

@@ -1,5 +1,5 @@
-@import '../variables.scss';
-@import '../mixins.scss';
+@import "../variables.scss";
+@import "../mixins.scss";
 
 .contact {
   @include contact;
@@ -12,6 +12,7 @@
   .contact-cta {
     color: $primary;
     text-decoration: none;
+    transition: $hover;
 
     &:hover {
       color: rgba($primary, 0.6);
@@ -30,6 +31,7 @@
   .dark-contact-cta {
     color: $dark-primary;
     text-decoration: none;
+    transition: $hover;
 
     &:hover {
       color: lighten($dark-primary, 15%);

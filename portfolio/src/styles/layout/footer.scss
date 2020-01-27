@@ -1,4 +1,4 @@
-@import '../variables.scss';
+@import "../variables.scss";
 
 .footer-nav {
   display: flex;
@@ -8,7 +8,6 @@
 
   @media (max-width: 750px) {
     flex-direction: column;
-    
   }
 
   .footer-icons {
@@ -21,6 +20,7 @@
   .footer-nav-link {
     text-decoration: none;
     color: $nav-link;
+    transition: $hover;
 
     &:visited {
       color: $nav-link;
@@ -43,6 +43,7 @@
   #site-source-link {
     text-decoration: none;
     color: $nav-link;
+    transition: $hover;
 
     &:visited {
       color: $nav-link;
@@ -61,6 +62,7 @@
   .dark-footer-nav-link {
     text-decoration: none;
     color: $dark-text;
+    transition: $hover;
 
     &:visited {
       color: $dark-text;
@@ -79,10 +81,11 @@
   .dark-footer-nav-link:nth-child(1) {
     margin-right: 2rem;
   }
-  
+
   #dark-site-source-link {
     text-decoration: none;
     color: $dark-text;
+    transition: $hover;
 
     &:visited {
       color: $dark-text;

@@ -26,15 +26,15 @@
 
 @mixin hero {
   margin-bottom: 8rem;
-  font-size: 4rem;
+  font-size: 3.5rem;
 }
 
 // piece mixins
 
 @mixin piece {
   margin: 1rem;
-  width: 250px;
-  height: 250px;
+  width: 275px;
+  height: 275px;
   box-shadow: 0 2px 10px 0px rgba(0, 0, 0, 0.25);
   display: flex;
   justify-content: space-between;
@@ -46,6 +46,7 @@
   flex-direction: column;
   margin: 0 1rem;
   line-height: 1.5;
+  color: $main;
 }
 
 @mixin piece-buttons {
@@ -63,9 +64,14 @@
 }
 
 @mixin learn {
-  font-weight: bolder;
   color: $main;
+  padding: 0.33rem;
   text-decoration: none;
-  border-bottom: 2px solid $main;
-  font-size: 0.9rem;
+  border: 1px solid $main;
+  transition: $hover;
+
+  &:hover {
+    color: white;
+    background: $main;
+  }
 }

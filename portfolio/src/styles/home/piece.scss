@@ -11,7 +11,7 @@
     @include piece-content-container;
 
     .dark-piece-title {
-      color: $dark-hover;
+      color: $dark-text;
     }
 
     .dark-piece-desc {
@@ -34,7 +34,12 @@
       .piece-learn {
         @include learn;
         color: $dark-text;
-        border-bottom: 2px solid $dark-text;
+        border: 1px solid $dark-text;
+
+        &:hover {
+          background: $dark-text;
+          color: $dark-piece;
+        }
       }
     }
   }

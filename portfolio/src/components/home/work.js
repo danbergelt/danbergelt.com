@@ -9,9 +9,7 @@ const Work = () => {
 
   return (
     <div className="work-spacer">
-      <h1 className={dark ? "dark-work-title" : "work-title"}>
-        Personal Projects
-      </h1>
+      <h1 className={dark ? "dark-work-title" : "work-title"}>Projects</h1>
       <div className="piece-container">
         <Piece
           name="Spotter"
