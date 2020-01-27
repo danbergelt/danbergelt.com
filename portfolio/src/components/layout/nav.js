@@ -9,7 +9,6 @@ import { addDark, removeDark } from "../../utils/darkmode"
 import { DarkContext } from "../../context/context"
 
 const Nav = () => {
-  
   const [dark, setDark] = useContext(DarkContext)
 
   const darkMode = () => {
@@ -29,12 +28,6 @@ const Nav = () => {
           <h1 className={dark ? "dan-icon-dark" : "dan-icon"}>{`<Dan />`}</h1>
         </Link>
         <div className="header-nav-link-container">
-          <Link
-            to="/about"
-            className={dark ? "dark-header-nav-link" : "header-nav-link"}
-          >
-            About
-          </Link>
           <Eye
             onClick={() => (dark ? lightMode() : darkMode())}
             className={

@@ -4,7 +4,7 @@
 // DARK MODE PIECE STYLES
 
 .dark-piece {
-  @include piece; 
+  @include piece;
   background: $dark-piece;
 
   .piece-content-container {
@@ -26,30 +26,15 @@
     }
 
     .dark-piece-gh {
-      color: $dark-primary;
       @include gh;
-    }
-
-    .dark-piece-site {
-      color: $dark-primary;
-      border: 2px solid $dark-primary;
-      @include piece-site;
-
-      &:hover {
-        color: white;
-        background-color: $dark-primary;
-        cursor: pointer;
-      }
-
-      &:active {
-        color: white;
-      }
+      color: $dark-text;
     }
 
     .piece-right-buttons {
-
       .piece-learn {
         @include learn;
+        color: $dark-text;
+        border-bottom: 2px solid $dark-text;
       }
     }
   }
@@ -75,7 +60,7 @@
     }
 
     .piece-gh {
-      color: $primary;
+      color: $main;
       @include gh;
 
       &:hover {
@@ -83,28 +68,11 @@
       }
 
       &:active {
-        color: $primary;
-      }
-    }
-
-    .piece-site {
-      color: $primary;
-      border: 2px solid $primary;
-      @include piece-site;
-
-      &:hover {
-        color: white;
-        background-color: $primary;
-        cursor: pointer;
-      }
-
-      &:active {
-        color: white;
+        color: $main;
       }
     }
 
     .piece-right-buttons {
-
       .piece-learn {
         @include learn;
       }

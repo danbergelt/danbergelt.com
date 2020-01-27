@@ -1,11 +1,10 @@
-import React, { useContext }  from "react"
+import React, { useContext } from "react"
 
 import { DarkContext } from "../../context/context"
 
 import Piece from "./piece"
 
 const Work = () => {
-
   const [dark] = useContext(DarkContext)
 
   return (
@@ -16,10 +15,14 @@ const Work = () => {
       <div className="piece-container">
         <Piece
           name="Spotter"
-          desc="A no-frills PR tracker - for lifters, by a lifter."
+          desc="A minimalist, user-first fitness pal. No bloat, no confusion, just PRs 🚀"
           dark={dark}
+          urls={{
+            gh: "https://github.com/danbergelt/spotter",
+            website: "http://getspotter.io",
+          }}
         />
-        <Piece
+        {/* <Piece
           name="Prophet"
           desc="A stock market algorithm you can wrap your head around."
           dark={dark}
@@ -28,7 +31,7 @@ const Work = () => {
           name="Lambda Labs"
           desc="Lambda Labs project"
           dark={dark}
-        />
+        /> */}
       </div>
     </div>
   )

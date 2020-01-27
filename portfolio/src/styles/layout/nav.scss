@@ -1,4 +1,4 @@
-@import '../variables.scss';
+@import "../variables.scss";
 
 .header-nav {
   display: flex;
@@ -58,49 +58,12 @@
     display: flex;
     align-items: center;
 
-    .header-nav-link, .dark-header-nav-link {
+    .header-nav-link {
       cursor: pointer;
       font-size: 1.2rem;
       text-decoration: none;
-
+      color: $main;
     }
-
-    .header-nav-link:nth-child(2) {
-      margin-left: 2rem;
-    }
-
-    .header-nav-link:nth-child(1) {
-      color: $nav-link;
-
-      &:hover {
-        color: black;
-      }
-
-      &:visited {
-        color: $nav-link;
-      }
-  
-      &:active {
-        color: black;
-      }
-    }
-
-    .dark-header-nav-link:nth-child(1) {
-      color: $dark-text;
-
-      &:visited {
-        color: $dark-text;
-      }
-
-      &:active {
-        color: $dark-hover;
-      }
-
-      &:hover {
-        color: $dark-hover;
-      }
-    }
-
     .dark-eye {
       color: white;
     }

@@ -1,4 +1,4 @@
-@import './variables.scss';
+@import "./variables.scss";
 
 // availability mixins
 
@@ -45,6 +45,7 @@
   display: flex;
   flex-direction: column;
   margin: 0 1rem;
+  line-height: 1.5;
 }
 
 @mixin piece-buttons {
@@ -55,33 +56,16 @@
 }
 
 @mixin gh {
+  color: $main;
   margin-right: 0.5rem;
   display: flex;
   align-self: flex-end;
 }
 
-@mixin piece-site {
-  padding: 0.15rem 0.5rem;
-  border-radius: 15%;
-  font-size: 0.9rem;
-  text-decoration: none;
-}
-
 @mixin learn {
-  color: $accent-two;
+  font-weight: bolder;
+  color: $main;
   text-decoration: none;
-  padding: 0.15rem 0.5rem;
-  border: 2px solid $accent-two;
-  border-radius: 15%;
+  border-bottom: 2px solid $main;
   font-size: 0.9rem;
-
-  &:hover {
-    color: white;
-    background-color: $accent-two;
-    cursor: pointer;
-  }
-
-  &:active {
-    color: white;
-  }
 }
