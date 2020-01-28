@@ -1,7 +1,9 @@
+const windowGlobal = typeof window !== "undefined" && window
+
 export const addDark = () => {
-  localStorage.setItem('dark', true);
+  windowGlobal.localStorage.setItem("dark", true)
 }
 
 export const removeDark = () => {
-  localStorage.removeItem('dark');
+  windowGlobal.localStorage.removeItem("dark")
 }
