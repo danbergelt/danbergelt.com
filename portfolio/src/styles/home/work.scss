@@ -14,11 +14,21 @@
   .work-title {
     color: $main;
     padding-bottom: 8rem;
+
+    @include medium {
+      font-size: 1.75em;
+      padding-bottom: 6rem;
+    }
   }
 
   .dark-work-title {
     color: $dark-text;
     padding-bottom: 8rem;
+
+    @include medium {
+      font-size: 1.75em;
+      padding-bottom: 6rem;
+    }
   }
 
   .piece-container {
