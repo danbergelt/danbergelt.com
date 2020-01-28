@@ -1,13 +1,14 @@
 import React, { useState, createContext } from "react"
+import { useEffect } from "react"
 
 export const DarkContext = createContext()
 
 export const DarkProvider = ({ children }) => {
-  const windowGlobal = typeof window !== "undefined" && window
+  const [dark, setDark] = useState(undefined)
 
-  const [dark, setDark] = useState(
-    windowGlobal.localStorage.getItem("dark") ? true : false
-  )
+  useEffect(() => {
+    setDark(localStorage.getItem("dark"))
+  }, [])
 
   return (
     <DarkContext.Provider value={[dark, setDark]}>
