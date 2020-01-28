@@ -1,5 +1,5 @@
-@import '../variables.scss';
-@import '../mixins.scss';
+@import "../variables.scss";
+@import "../mixins.scss";
 
 .availability {
   @include availability;
@@ -27,7 +27,7 @@
     }
   }
 
-  .availability-icon{
+  .availability-icon {
     width: 2rem;
     height: 2rem;
     margin-left: 0.5rem;
@@ -55,7 +55,7 @@
       font-size: 1.5rem;
     }
 
-    .availability-icon{
+    .availability-icon {
       width: 2rem;
       height: 2rem;
       margin-left: 0.5rem;

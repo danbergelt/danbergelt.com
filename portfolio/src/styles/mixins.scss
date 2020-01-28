@@ -26,7 +26,7 @@
 
 @mixin hero {
   margin-bottom: 8rem;
-  font-size: 3.5rem;
+  font-size: 3.25rem;
 }
 
 // piece mixins
@@ -69,6 +69,7 @@
   text-decoration: none;
   border: 1px solid $main;
   transition: $hover;
+  font-weight: 500;
 
   &:hover {
     color: white;

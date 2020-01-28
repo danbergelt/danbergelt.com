@@ -13,8 +13,9 @@ const Contact = () => {
           className={dark ? "dark-contact-cta" : "contact-cta"}
           href="mailto:dan@danbergelt.com"
         >
-          Say hi.
+          Click me
         </a>
+        .
       </section>
     </>
   )

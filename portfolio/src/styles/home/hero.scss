@@ -10,7 +10,7 @@
   }
 
   #hero-highlight {
-    color: $primary;
+    border-bottom: 8px solid $primary;
   }
 }
 
@@ -23,6 +23,6 @@
   }
 
   #dark-hero-highlight {
-    color: $dark-primary;
+    border-bottom: 8px solid $dark-primary;
   }
 }

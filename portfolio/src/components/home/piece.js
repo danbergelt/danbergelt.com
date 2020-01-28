@@ -16,7 +16,7 @@ const Piece = ({ name, desc, urls }) => {
       <div className="piece-buttons">
         <div className="piece-left-buttons">
           <a href={urls.gh} className={dark ? "dark-piece-gh" : "piece-gh"}>
-            <GitHub size="30" stroke-width={1.25} />
+            <GitHub size="30" strokeWidth={1.25} />
           </a>
         </div>
         <div className="piece-right-buttons">

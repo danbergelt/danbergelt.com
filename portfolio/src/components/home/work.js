@@ -23,12 +23,20 @@ const Work = () => {
         {/* <Piece
           name="Prophet"
           desc="A stock market algorithm you can wrap your head around."
+          urls={{
+            gh: "https://github.com/danbergelt/spotter",
+            website: "http://getspotter.io",
+          }}
           dark={dark}
         />
         <Piece
           name="Lambda Labs"
           desc="Lambda Labs project"
           dark={dark}
+          urls={{
+            gh: "https://github.com/danbergelt/spotter",
+            website: "http://getspotter.io",
+          }}
         /> */}
       </div>
     </div>

@@ -10,13 +10,10 @@
   }
 
   .contact-cta {
-    color: $primary;
+    color: $main;
+    border-bottom: 6px solid $primary;
     text-decoration: none;
     transition: $hover;
-
-    &:hover {
-      color: rgba($primary, 0.6);
-    }
   }
 }
 
@@ -29,12 +26,9 @@
   }
 
   .dark-contact-cta {
-    color: $dark-primary;
+    color: $dark-text;
+    border-bottom: 6px solid $dark-primary;
     text-decoration: none;
     transition: $hover;
-
-    &:hover {
-      color: lighten($dark-primary, 15%);
-    }
   }
 }

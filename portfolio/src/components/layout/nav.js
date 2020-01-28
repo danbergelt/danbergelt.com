@@ -25,7 +25,7 @@ const Nav = () => {
     <header>
       <nav className="header-nav">
         <Link className="home-link" to="/">
-          <h1 className={dark ? "dan-icon-dark" : "dan-icon"}>{`<Dan />`}</h1>
+          <h1 className={dark ? "dan-icon-dark" : "dan-icon"}>Dan</h1>
         </Link>
         <div className="header-nav-link-container">
           <Eye
