@@ -5,7 +5,7 @@
   @include contact;
   color: $main;
 
-  @media (max-width: 750px) {
+  @include medium {
     font-size: $mobile-font;
   }
 
@@ -21,7 +21,7 @@
   @include contact;
   color: $dark-text;
 
-  @media (max-width: 750px) {
+  @include medium {
     font-size: $mobile-font;
   }
 

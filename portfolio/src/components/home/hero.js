@@ -8,11 +8,11 @@ const Hero = () => {
   return (
     <>
       <section className={dark ? "dark-hero" : "hero"}>
-        Hi, I'm Dan. I'm a NYC-based{" "}
+        Hi, I'm Dan. I'm a{" "}
         <span id={dark ? "dark-hero-highlight" : "hero-highlight"}>
           developer
-        </span>
-        , and I build web apps.
+        </span>{" "}
+        based in NYC, and I build web apps.
       </section>
     </>
   )

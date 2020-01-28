@@ -5,16 +5,16 @@
   @include availability;
   color: $main;
 
-  @media (max-width: 750px) {
-    font-size: 1.5rem;
+  @include medium {
+    font-size: 1.25rem;
   }
 
   .availability-status {
     color: $available;
     @include availability-status;
 
-    @media (max-width: 750px) {
-      font-size: 1.5rem;
+    @include medium {
+      font-size: 1.25rem;
     }
   }
 
@@ -22,7 +22,7 @@
     color: $not-available;
     @include availability-status;
 
-    @media (max-width: 750px) {
+    @include medium {
       font-size: 1.5rem;
     }
   }
@@ -32,7 +32,7 @@
     height: 2rem;
     margin-left: 0.5rem;
 
-    @media (max-width: 750px) {
+    @include medium {
       width: 1.5rem;
       height: 1.5rem;
     }
@@ -43,16 +43,16 @@
   @include availability;
   color: $dark-text;
 
-  @media (max-width: 750px) {
-    font-size: 1.5rem;
+  @include medium {
+    font-size: 1.25rem;
   }
 
   .dark-availability-status {
     color: $dark-available;
     @include availability-status;
 
-    @media (max-width: 750px) {
-      font-size: 1.5rem;
+    @include medium {
+      font-size: 1.25rem;
     }
 
     .availability-icon {
@@ -60,7 +60,7 @@
       height: 2rem;
       margin-left: 0.5rem;
 
-      @media (max-width: 750px) {
+      @include medium {
         width: 1.5rem;
         height: 1.5rem;
       }

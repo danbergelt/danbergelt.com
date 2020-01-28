@@ -1,4 +1,5 @@
 @import "../variables.scss";
+@import "../mixins.scss";
 
 .footer-nav {
   display: flex;
@@ -6,12 +7,12 @@
   padding-bottom: 2rem;
   font-size: 1.2rem;
 
-  @media (max-width: 750px) {
+  @include medium {
     flex-direction: column;
   }
 
   .footer-icons {
-    @media (max-width: 750px) {
+    @include medium {
       display: flex;
       flex-direction: column;
     }

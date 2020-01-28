@@ -5,8 +5,9 @@
   @include hero;
   color: $main;
 
-  @media (max-width: 750px) {
-    font-size: 2.5rem;
+  @include medium {
+    font-size: 2.25rem;
+    margin-bottom: 6rem;
   }
 
   #hero-highlight {
@@ -18,8 +19,9 @@
   @include hero;
   color: $dark-text;
 
-  @media (max-width: 750px) {
-    font-size: 2.5rem;
+  @include medium {
+    font-size: 2rem;
+    margin-bottom: 6rem;
   }
 
   #dark-hero-highlight {
