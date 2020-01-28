@@ -11,6 +11,8 @@ import { addDark, removeDark } from "../../utils/darkmode"
 import { DarkContext } from "../../context/context"
 
 const Nav = () => {
+  const { width } = useWindowSize()
+
   const [dark, setDark] = useContext(DarkContext)
 
   const darkMode = () => {
@@ -22,8 +24,6 @@ const Nav = () => {
     setDark(false)
     removeDark()
   }
-
-  const { width } = useWindowSize()
 
   return (
     <header>

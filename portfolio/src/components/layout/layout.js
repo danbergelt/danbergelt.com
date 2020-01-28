@@ -13,7 +13,7 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Helmet title={`Dan Bergelt | Developer`}>
+      <Helmet title={`Dan Bergelt`}>
         <meta
           name="description"
           content="Dan Bergelt, Software Developer in New York City."
