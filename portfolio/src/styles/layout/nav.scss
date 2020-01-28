@@ -6,9 +6,21 @@
   align-items: center;
   justify-content: space-between;
   margin-bottom: 6rem;
+  padding-top: 2rem;
 
-  .home-link {
-    text-decoration: none;
+  .header-gear-container {
+    display: flex;
+    transform-origin: 50% 50% 0;
+
+    .header-gear {
+      animation: spin 2.5s linear infinite;
+    }
+
+    .header-gear-offset {
+      position: relative;
+      right: 5px;
+      animation: offsetSpin 2.5s linear infinite;
+    }
   }
 
   .dan-icon {
@@ -68,5 +80,59 @@
     .dark-eye {
       color: $dark-text;
     }
+  }
+}
+
+// Clockwise
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+@-moz-keyframes spin {
+  from {
+    -moz-transform: rotate(0deg);
+  }
+  to {
+    -moz-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+// Counter-clockwise
+
+@keyframes offsetSpin {
+  from {
+    transform: rotate(359deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+@-moz-keyframes offsetSpin {
+  from {
+    -moz-transform: rotate(0deg);
+  }
+  to {
+    -moz-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes offsetSpin {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
   }
 }
