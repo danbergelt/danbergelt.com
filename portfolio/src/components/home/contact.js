@@ -8,14 +8,15 @@ const Contact = () => {
   return (
     <>
       <section className={dark ? "dark-contact" : "contact"}>
-        Want to get in touch?{" "}
-        <a
-          className={dark ? "dark-contact-cta" : "contact-cta"}
-          href="mailto:dan@danbergelt.com"
-        >
-          Click me
-        </a>
-        .
+        <div>Want to get in touch?</div>
+        <div className="contact-cta-wrapper">
+          <a
+            className={dark ? "dark-contact-cta" : "contact-cta"}
+            href="mailto:dan@danbergelt.com"
+          >
+            Click me.
+          </a>
+        </div>
       </section>
     </>
   )

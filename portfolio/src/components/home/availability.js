@@ -5,7 +5,6 @@ import { DarkContext } from "../../context/context"
 import { CheckCircle, Slash } from "react-feather"
 
 const Availability = () => {
-  
   const [availability] = useState(true)
 
   const [dark] = useContext(DarkContext)
@@ -14,14 +13,13 @@ const Availability = () => {
     <>
       {availability === true ? (
         <section className={dark ? "dark-availability" : "availability"}>
-          Available for contract work:{" "}
+          Available for work:{" "}
           <span
             className={
               dark ? "dark-availability-status" : "availability-status"
             }
           >
-            Available{" "}
-            {<CheckCircle className="availability-icon" />}
+            Available {<CheckCircle className="availability-icon" />}
           </span>
         </section>
       ) : (

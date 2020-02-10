@@ -12,7 +12,7 @@ const Work = () => {
       <h1 className={dark ? "dark-work-title" : "work-title"}>Projects</h1>
       <div className="piece-container">
         <Piece
-          name="Spotter"
+          name="spotter"
           desc="A minimalist, user-first fitness pal. No bloat, no confusion, just PRs."
           dark={dark}
           urls={{
