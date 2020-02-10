@@ -13,30 +13,12 @@ const Work = () => {
       <div className="piece-container">
         <Piece
           name="spotter"
-          desc="A minimalist, user-first fitness pal. No bloat, no confusion, just PRs."
+          desc="A minimalist, user-first fitness pal. Built in Typescript, React/Redux, Node.JS, MongoDB."
           dark={dark}
           urls={{
             gh: "https://github.com/danbergelt/spotter",
             website: "http://getspotter.io",
           }}
-        />
-        <Piece
-          name="Name goes here"
-          desc="Description for the project goes here."
-          urls={{
-            gh: "https://github.com/danbergelt/spotter",
-            website: "http://getspotter.io",
-          }}
-          dark={dark}
-        />
-        <Piece
-          name="Name goes here"
-          desc="Description for the project goes here."
-          urls={{
-            gh: "https://github.com/danbergelt/spotter",
-            website: "http://getspotter.io",
-          }}
-          dark={dark}
         />
         {/* // <Piece
           //   name="Prophet"
