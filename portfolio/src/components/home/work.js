@@ -13,7 +13,7 @@ const Work = () => {
       <div className="piece-container">
         <Piece
           name="spotter"
-          desc="A minimalist, user-first fitness pal. Built in Typescript, React/Redux, Node.JS, MongoDB."
+          desc="A blazing-fast, UX-obsessed, lifting-focused fitness pal."
           dark={dark}
           urls={{
             gh: "https://github.com/danbergelt/spotter",
