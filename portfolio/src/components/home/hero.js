@@ -9,17 +9,17 @@ const Hero = () => {
     <>
       <section className={dark ? "dark-hero" : "hero"}>
         <Wave dark={dark} />
-        <div>Hi, I'm Dan.</div>
+        <div>hi, i'm dan</div>
         <br />
         <div>
-          I'm a{" "}
+          i'm a{" "}
           <span
             data-text="wavy"
             id={dark ? "dark-hero-highlight" : "hero-highlight"}
           >
             developer
           </span>{" "}
-          based in NYC, and I build web apps.
+          based in nyc, and i build web apps
         </div>
       </section>
     </>

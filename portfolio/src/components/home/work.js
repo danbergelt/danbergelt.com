@@ -9,11 +9,11 @@ const Work = () => {
 
   return (
     <div className="work-spacer">
-      <h1 className={dark ? "dark-work-title" : "work-title"}>Projects</h1>
+      <h1 className={dark ? "dark-work-title" : "work-title"}>projects</h1>
       <div className="piece-container">
         <Piece
           name="spotter"
-          desc="A blazing fast, UX obsessed, lifting focused fitness pal."
+          desc="a blazing fast, user obsessed, lifting focused fitness pal"
           dark={dark}
           urls={{
             gh: "https://github.com/danbergelt/spotter",
