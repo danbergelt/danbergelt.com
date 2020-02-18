@@ -489,7 +489,7 @@ const Wave = ({ dark }) => {
       <svg
         className="wave-svg"
         xmlns="http://www.w3.org/2000/svg"
-        width={width <= 1000 ? "170px" : "250px"}
+        width={width <= 1000 ? "179px" : "260px"}
         height="60px"
         viewBox={width <= 1000 ? "5 0 170 60" : "5 0 250 60"}
       >

@@ -3,13 +3,13 @@
 .wave-container {
   position: absolute;
   top: 371px;
-  left: 271px;
+  left: 265px;
   height: 110px;
   width: 110px;
 
   @include medium {
     top: 292px;
-    left: 132px;
+    left: 128px;
   }
 
   @media (max-width: 339px) {
@@ -24,7 +24,6 @@
 }
 
 #wave {
-  stroke-dasharray: 0 16 400 16;
   animation: moveTheWave 2400ms linear infinite;
 }
 
