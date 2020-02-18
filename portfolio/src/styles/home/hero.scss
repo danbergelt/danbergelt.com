@@ -11,25 +11,10 @@
   }
 
   #hero-highlight {
-    display: inline-block;
+    border-bottom: 8px solid $primary;
 
-    .wavy {
-      position: absolute;
-      top: 335px;
-      width: 260px;
-      height: 100px;
-      background: url(./home/wavy.svg);
-
-      @include medium {
-        top: 275px;
-        width: 175px;
-        background: 0;
-        background: url(./home/wavy2.svg);
-      }
-
-      @media (max-width: 339px) {
-        top: 325px;
-      }
+    @include medium {
+      border-bottom: 6px solid $primary;
     }
   }
 }
@@ -44,26 +29,10 @@
   }
 
   #dark-hero-highlight {
-    display: inline-block;
+    border-bottom: 8px solid $dark-primary;
 
-    .dark-wavy {
-      position: absolute;
-      top: 333px;
-      width: 260px;
-      height: 75px;
-      background: url(./home/wavydark.svg);
-
-      @include medium {
-        top: 275px;
-        width: 175px;
-        height: 55px;
-        background: 0;
-        background: url(./home/wavydark2.svg);
-      }
-
-      @media (max-width: 339px) {
-        top: 325px;
-      }
+    @include medium {
+      border-bottom: 6px solid $dark-primary;
     }
   }
 }
