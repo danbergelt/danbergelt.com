@@ -20,24 +20,15 @@ const Work = () => {
             website: "http://getspotter.io",
           }}
         />
-        {/* // <Piece
-          //   name="Prophet"
-          //   desc="A stock market algorithm you can wrap your head around."
-          //   urls={{
-          //     gh: "https://github.com/danbergelt/spotter",
-          //     website: "http://getspotter.io",
-          //   }}
-          //   dark={dark}
-          // />
-          // <Piece
-          //   name="Lambda Labs"
-          //   desc="Lambda Labs project"
-          //   dark={dark}
-          //   urls={{
-          //     gh: "https://github.com/danbergelt/spotter",
-          //     website: "http://getspotter.io",
-          //   }} */}
-        {/* /> */}
+        <Piece
+          name="party planner"
+          desc="a full-stack party planner, built during a 4 day sprint with 2 other developers"
+          dark={dark}
+          urls={{
+            gh: "https://github.com/build-week-party-planner",
+            website: "https://elastic-jennings-52d92d.netlify.com/login",
+          }}
+        />
       </div>
     </div>
   )
