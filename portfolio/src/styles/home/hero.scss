@@ -11,10 +11,29 @@
   }
 
   #hero-highlight {
-    border-bottom: 8px solid $primary;
+    display: inline-block;
 
-    @include medium {
-      border-bottom: 6px solid $primary;
+    .wavy {
+      position: absolute;
+      top: 335px;
+      width: 260px;
+      height: 100px;
+      background: url(./home/wavy.svg);
+      animation: move 7.5s linear infinite;
+      -webkit-animation: move 7.5s linear infinite;
+
+      @include medium {
+        top: 275px;
+        width: 175px;
+        background: 0;
+        background: url(./home/wavy2.svg);
+        animation: move 7.5s linear infinite;
+        -webkit-animation: move 7.5s linear infinite;
+      }
+
+      @media (max-width: 339px) {
+        top: 325px;
+      }
     }
   }
 }
@@ -29,10 +48,48 @@
   }
 
   #dark-hero-highlight {
-    border-bottom: 8px solid $dark-primary;
+    display: inline-block;
 
-    @include medium {
-      border-bottom: 6px solid $dark-primary;
+    .dark-wavy {
+      position: absolute;
+      top: 333px;
+      width: 250px;
+      height: 75px;
+      background: url(./home/wavydark.svg);
+      animation: move 7.5s linear infinite;
+      -webkit-animation: move 7.5s linear infinite;
+
+      @include medium {
+        top: 275px;
+        width: 180px;
+        height: 55px;
+        background: 0;
+        background: url(./home/wavydark2.svg);
+        animation: move 7.5s linear infinite;
+        -webkit-animation: move 7.5s linear infinite;
+      }
+
+      @media (max-width: 339px) {
+        top: 325px;
+      }
+    }
+  }
+
+  @-webkit-keyframes move {
+    from {
+      background-position: 10px 19px;
+    }
+    to {
+      background-position: 500px 19px;
+    }
+  }
+
+  @keyframes move {
+    from {
+      background-position: 10px 19px;
+    }
+    to {
+      background-position: 500px 19px;
     }
   }
 }

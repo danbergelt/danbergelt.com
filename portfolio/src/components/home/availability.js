@@ -26,7 +26,7 @@ const Availability = () => {
         <section className="availability">
           Available for contract work:{" "}
           <span className="no-availability-status">
-            Not Available {<Slash className="availability-icon" />}
+            Unavailable {<Slash className="availability-icon" />}
           </span>
         </section>
       )}
