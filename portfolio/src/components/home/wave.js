@@ -8,8 +8,8 @@ const Wave = ({ dark }) => {
   const m = 0.512286623256592433
 
   function buildWave(w, h) {
-    const a = h / 6.25
-    const y = h / 1.25
+    const a = h / 6.66
+    const y = h / 1.66
 
     const pathData = [
       "M",
@@ -481,7 +481,7 @@ const Wave = ({ dark }) => {
   }
 
   useEffect(() => {
-    buildWave(95, 33)
+    buildWave(95, 45)
   }, [])
 
   return (
