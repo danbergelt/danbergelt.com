@@ -11,10 +11,10 @@
   }
 
   #hero-highlight {
-    border-bottom: 8px solid $primary;
+    // border-bottom: 8px solid $primary;
 
     @include medium {
-      border-bottom: 6px solid $primary;
+      // border-bottom: 6px solid $primary;
     }
   }
 }
@@ -29,10 +29,10 @@
   }
 
   #dark-hero-highlight {
-    border-bottom: 8px solid $dark-primary;
+    // border-bottom: 8px solid $dark-primary;
 
     @include medium {
-      border-bottom: 6px solid $dark-primary;
+      // border-bottom: 6px solid $dark-primary;
     }
   }
 }

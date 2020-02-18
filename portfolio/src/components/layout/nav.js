@@ -32,12 +32,12 @@ const Nav = () => {
           <Gear
             spin={"header-gear"}
             color={!dark ? "#333333" : "#afafb9"}
-            size={width >= 750 ? "60px" : "50px"}
+            size={width >= 1000 ? "60px" : "50px"}
           />
           <Gear
             spin={"header-gear-offset"}
             color={!dark ? "#333333" : "#afafb9"}
-            size={width >= 750 ? "50px" : "40px"}
+            size={width >= 1000 ? "50px" : "40px"}
           />
         </div>
         <div className="header-nav-link-container">
@@ -45,7 +45,7 @@ const Nav = () => {
             dark={dark}
             lightMode={() => lightMode()}
             darkMode={() => darkMode()}
-            size={width >= 750 ? "55px" : "45px"}
+            size={width >= 1000 ? "55px" : "45px"}
             color={!dark ? "#333333" : "#afafb9"}
           />
         </div>
