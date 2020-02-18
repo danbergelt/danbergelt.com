@@ -19,16 +19,12 @@
       width: 260px;
       height: 100px;
       background: url(./home/wavy.svg);
-      animation: move 7.5s linear infinite;
-      -webkit-animation: move 7.5s linear infinite;
 
       @include medium {
         top: 275px;
         width: 175px;
         background: 0;
         background: url(./home/wavy2.svg);
-        animation: move 7.5s linear infinite;
-        -webkit-animation: move 7.5s linear infinite;
       }
 
       @media (max-width: 339px) {
@@ -53,43 +49,21 @@
     .dark-wavy {
       position: absolute;
       top: 333px;
-      width: 250px;
+      width: 260px;
       height: 75px;
       background: url(./home/wavydark.svg);
-      animation: move 7.5s linear infinite;
-      -webkit-animation: move 7.5s linear infinite;
 
       @include medium {
         top: 275px;
-        width: 180px;
+        width: 175px;
         height: 55px;
         background: 0;
         background: url(./home/wavydark2.svg);
-        animation: move 7.5s linear infinite;
-        -webkit-animation: move 7.5s linear infinite;
       }
 
       @media (max-width: 339px) {
         top: 325px;
       }
-    }
-  }
-
-  @-webkit-keyframes move {
-    from {
-      background-position: 10px 19px;
-    }
-    to {
-      background-position: 500px 19px;
-    }
-  }
-
-  @keyframes move {
-    from {
-      background-position: 10px 19px;
-    }
-    to {
-      background-position: 500px 19px;
     }
   }
 }
