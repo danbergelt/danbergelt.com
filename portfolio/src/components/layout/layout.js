@@ -14,11 +14,8 @@ const Layout = ({ children }) => {
   return (
     dark !== undefined && (
       <>
-        <Helmet title={`Dan Bergelt`}>
-          <meta
-            name="description"
-            content="Dan Bergelt, Software Developer in New York City."
-          />
+        <Helmet title={`dan bergelt`}>
+          <meta name="description" content="dan bergelt, software engineer" />
           <link rel="icon" href={favicon} />
         </Helmet>
         <div className={dark ? "master" : null}>

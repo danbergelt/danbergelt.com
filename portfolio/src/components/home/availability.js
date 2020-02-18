@@ -13,20 +13,20 @@ const Availability = () => {
     <>
       {availability === true ? (
         <section className={dark ? "dark-availability" : "availability"}>
-          Available for work:{" "}
+          available for work:{" "}
           <span
             className={
               dark ? "dark-availability-status" : "availability-status"
             }
           >
-            Available {<CheckCircle className="availability-icon" />}
+            available {<CheckCircle className="availability-icon" />}
           </span>
         </section>
       ) : (
         <section className="availability">
-          Available for contract work:{" "}
+          available for work:{" "}
           <span className="no-availability-status">
-            Not Available {<Slash className="availability-icon" />}
+            unvailable {<Slash className="availability-icon" />}
           </span>
         </section>
       )}

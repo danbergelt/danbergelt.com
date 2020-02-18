@@ -21,7 +21,7 @@ const Piece = ({ name, desc, urls }) => {
         </div>
         <div className="piece-right-buttons">
           <a href={urls.website} className="piece-learn">
-            Website
+            website
           </a>
         </div>
       </div>

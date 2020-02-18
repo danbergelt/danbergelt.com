@@ -3,7 +3,6 @@ import React, { useContext } from "react"
 import { DarkContext } from "../../context/context"
 
 const Footer = () => {
-  
   const [dark] = useContext(DarkContext)
 
   return (
@@ -14,13 +13,13 @@ const Footer = () => {
             href="https://github.com/danbergelt"
             className={dark ? "dark-footer-nav-link" : "footer-nav-link"}
           >
-            GitHub
+            github
           </a>
           <a
             href="https://www.linkedin.com/in/danbergelt/"
             className={dark ? "dark-footer-nav-link" : "footer-nav-link"}
           >
-            LinkedIn
+            linkedin
           </a>
         </div>
         <div>
@@ -28,7 +27,7 @@ const Footer = () => {
             href="https://github.com/danbergelt/portfolio-site"
             id={dark ? "dark-site-source-link" : "site-source-link"}
           >
-            Site source code
+            source code
           </a>
         </div>
       </nav>
