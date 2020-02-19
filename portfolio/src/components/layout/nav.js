@@ -45,7 +45,7 @@ const Nav = () => {
             dark={dark}
             lightMode={() => lightMode()}
             darkMode={() => darkMode()}
-            size={width >= 1000 ? "55px" : "45px"}
+            size={width >= 1000 ? "40px" : "30px"}
             color={!dark ? "#333333" : "#afafb9"}
           />
         </div>

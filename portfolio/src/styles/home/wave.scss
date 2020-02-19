@@ -24,16 +24,14 @@
 }
 
 #wave {
-  animation: moveTheWave 2400ms linear infinite;
+  animation: moveTheWave 4s linear infinite;
 }
 
 @keyframes moveTheWave {
   0% {
-    stroke-dashoffset: 0;
-    transform: translate3d(0, 0, 0);
+    transform: translate3d(-95px, 0, 0);
   }
   100% {
-    stroke-dashoffset: -133;
-    transform: translate3d(-95px, 0, 0);
+    transform: translate3d(0px, 0, 0);
   }
 }
