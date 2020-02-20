@@ -10,8 +10,25 @@
   .piece-content-container {
     @include piece-content-container;
 
-    .dark-piece-title {
-      color: $dark-text;
+    .piece-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .dark-piece-title {
+        color: $dark-text;
+      }
+
+      .piece-tech-container {
+        display: flex;
+        align-items: center;
+        font-size: 0.9rem;
+
+        .dark-piece-tech {
+          margin-right: 0.5rem;
+          color: $dark-text;
+        }
+      }
     }
 
     .dark-piece-desc {
@@ -53,8 +70,24 @@
   .piece-content-container {
     @include piece-content-container;
 
-    .piece-title {
-      color: $main;
+    .piece-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .piece-title {
+        color: $main;
+      }
+
+      .piece-tech-container {
+        display: flex;
+        align-items: center;
+        font-size: 0.9rem;
+
+        .piece-tech {
+          margin-right: 0.5rem;
+        }
+      }
     }
   }
   .piece-buttons {

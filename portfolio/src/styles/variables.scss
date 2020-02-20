@@ -19,3 +19,13 @@ $mobile-font: 1.75rem;
 
 // hover transition:
 $hover: all 200ms ease;
+
+:export {
+  lightOne: $primary;
+  darkOne: $dark-primary;
+  lightTwo: $available;
+  darkTwo: $dark-available;
+  three: $accent-two;
+  chev: $main;
+  darkChev: $dark-text;
+}
