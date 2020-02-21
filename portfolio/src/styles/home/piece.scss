@@ -3,9 +3,42 @@
 
 // DARK MODE PIECE STYLES
 
+.dark-piece-parent {
+  width: 300px;
+  height: 300px;
+  margin: 3rem 2rem;
+  display: flex;
+  flex-direction: column;
+  background: $dark-piece;
+
+  .dark-tech {
+    position: absolute;
+    background: $dark-text;
+    color: $dark-background;
+    margin-top: -3.25rem;
+    padding: 0.05rem 0.5rem;
+    width: 284px;
+    overflow: hidden;
+    z-index: -1;
+    white-space: nowrap;
+
+    .ticker {
+      display: inline-block;
+      padding-left: 100%;
+
+      .tech-individual {
+        margin-right: 0.75rem;
+      }
+    }
+
+    .delay {
+      animation-delay: 3s;
+    }
+  }
+}
+
 .dark-piece {
   @include piece;
-  background: $dark-piece;
 
   .piece-content-container {
     @include piece-content-container;
@@ -23,10 +56,19 @@
         display: flex;
         align-items: center;
         font-size: 0.9rem;
+        cursor: pointer;
 
         .dark-piece-tech {
           margin-right: 0.5rem;
           color: $dark-text;
+        }
+
+        .open-tech {
+          animation: tech 0.5s forwards linear;
+        }
+
+        .close-tech {
+          animation: reverse-tech 0.5s forwards linear;
         }
       }
     }
@@ -64,56 +106,127 @@
 
 // LIGHT MODE PIECE STYLES
 
-.piece {
-  @include piece;
+.piece-parent {
+  width: 300px;
+  height: 300px;
+  margin: 3rem 2rem;
+  display: flex;
+  flex-direction: column;
+  background: white;
 
-  .piece-content-container {
-    @include piece-content-container;
+  .tech {
+    position: absolute;
+    background: $dark-background;
+    color: $dark-text;
+    margin-top: -3.25rem;
+    padding: 0.05rem 0.5rem;
+    width: 284px;
+    overflow: hidden;
+    z-index: -1;
+    white-space: nowrap;
 
-    .piece-head {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+    .ticker {
+      display: inline-block;
+      padding-left: 100%;
 
-      .piece-title {
-        color: $main;
+      .tech-individual {
+        margin-right: 0.75rem;
+      }
+    }
+
+    .delay {
+      animation-delay: 3s;
+    }
+  }
+
+  .piece {
+    @include piece;
+
+    .piece-content-container {
+      @include piece-content-container;
+
+      .piece-head {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .piece-title {
+          color: $main;
+        }
+
+        .piece-tech-container {
+          display: flex;
+          align-items: center;
+          font-size: 0.9rem;
+          cursor: pointer;
+
+          .piece-tech {
+            margin-right: 0.5rem;
+          }
+
+          .open-tech {
+            animation: tech 0.5s forwards linear;
+          }
+
+          .close-tech {
+            animation: reverse-tech 0.5s forwards linear;
+          }
+        }
+      }
+    }
+    .piece-buttons {
+      @include piece-buttons;
+
+      .piece-left-buttons {
+        display: flex;
       }
 
-      .piece-tech-container {
-        display: flex;
-        align-items: center;
-        font-size: 0.9rem;
+      .piece-gh {
+        color: $main;
+        @include gh;
 
-        .piece-tech {
-          margin-right: 0.5rem;
+        &:hover {
+          cursor: pointer;
+        }
+
+        &:active {
+          color: $main;
+        }
+      }
+
+      .piece-right-buttons {
+        .piece-learn {
+          @include learn;
         }
       }
     }
   }
-  .piece-buttons {
-    @include piece-buttons;
+}
 
-    .piece-left-buttons {
-      display: flex;
-    }
+@keyframes tech {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
 
-    .piece-gh {
-      color: $main;
-      @include gh;
+@keyframes reverse-tech {
+  0% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 
-      &:hover {
-        cursor: pointer;
-      }
+@keyframes ticker {
+  0% {
+    transform: translate(0, 0);
+  }
 
-      &:active {
-        color: $main;
-      }
-    }
-
-    .piece-right-buttons {
-      .piece-learn {
-        @include learn;
-      }
-    }
+  100% {
+    transform: translate(-100%, 0);
   }
 }

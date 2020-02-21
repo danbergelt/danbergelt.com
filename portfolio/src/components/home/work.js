@@ -29,6 +29,15 @@ const Work = () => {
             chev: styles.chev,
             darkChev: styles.darkChev,
           }}
+          techs={[
+            "react",
+            "redux",
+            "typescript",
+            "mongodb",
+            "node",
+            "express",
+            "docker",
+          ]}
         />
         <Piece
           name="game of life"
@@ -44,6 +53,15 @@ const Work = () => {
             chev: styles.chev,
             darkChev: styles.darkChev,
           }}
+          techs={[
+            "react",
+            "typescript",
+            "eslint",
+            "scss",
+            "immer",
+            "html5",
+            "css3",
+          ]}
         />
         <Piece
           name="party planner"
@@ -59,6 +77,15 @@ const Work = () => {
             chev: styles.chev,
             darkChev: styles.darkChev,
           }}
+          techs={[
+            "react",
+            "redux",
+            "node",
+            "postgres",
+            "express",
+            "html5",
+            "css3",
+          ]}
         />
       </div>
     </div>
