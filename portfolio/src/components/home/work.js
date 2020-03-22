@@ -6,8 +6,6 @@ import Piece from "./piece"
 
 import styles from "../../styles/variables.scss"
 
-console.log(styles)
-
 const Work = () => {
   const [dark] = useContext(DarkContext)
 
