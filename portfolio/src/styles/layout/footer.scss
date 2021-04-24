@@ -39,6 +39,7 @@
 
   .footer-nav-link:nth-child(2) {
     margin-right: 2rem;
+    margin-left: 2rem;
   }
 
   #site-source-link {
@@ -79,7 +80,8 @@
     }
   }
 
-  .dark-footer-nav-link:nth-child(1) {
+  .dark-footer-nav-link:nth-child(2) {
+    margin-left: 2rem;
     margin-right: 2rem;
   }
 
