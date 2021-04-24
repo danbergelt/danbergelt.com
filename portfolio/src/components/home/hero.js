@@ -17,9 +17,9 @@ const Hero = () => {
             data-text="wavy"
             id={dark ? "dark-hero-highlight" : "hero-highlight"}
           >
-            developer
+            software engineer
           </span>{" "}
-          based in nyc, and i build web apps
+          based in nyc, currently employed at bloomberg
         </div>
       </section>
     </>
