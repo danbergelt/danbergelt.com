@@ -21,6 +21,12 @@ const Footer = () => {
           >
             linkedin
           </a>
+          <a 
+            href="mailto:dan@danbergelt.com"
+            className={dark ? "dark-footer-nav-link" : "footer-nav-link"}
+          >
+            email
+          </a>
         </div>
         <div>
           <a
