@@ -1,6 +1,5 @@
 import React, { useContext } from "react"
 import { DarkContext } from "../../context/context"
-import Wave from "./wave"
 
 const Hero = () => {
   const [dark] = useContext(DarkContext)
@@ -8,7 +7,6 @@ const Hero = () => {
   return (
     <>
       <section className={dark ? "dark-hero" : "hero"}>
-        <Wave dark={dark} />
         <div>hi, i'm dan</div>
         <br />
         <div>
