@@ -40,6 +40,10 @@
   .footer-nav-link:nth-child(2) {
     margin-right: 2rem;
     margin-left: 2rem;
+
+    @include medium {
+      margin-left: 0;
+    }
   }
 
   #site-source-link {
@@ -83,6 +87,10 @@
   .dark-footer-nav-link:nth-child(2) {
     margin-left: 2rem;
     margin-right: 2rem;
+
+    @include medium {
+      margin-left: none;
+    }
   }
 
   #dark-site-source-link {
