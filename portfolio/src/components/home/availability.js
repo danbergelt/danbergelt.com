@@ -5,7 +5,7 @@ import { DarkContext } from "../../context/context"
 import { CheckCircle, Slash } from "react-feather"
 
 const Availability = () => {
-  const [availability] = useState(true)
+  const [availability] = useState(false)
 
   const [dark] = useContext(DarkContext)
 

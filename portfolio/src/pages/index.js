@@ -17,8 +17,8 @@ export default () => {
       <Layout>
         <Hero />
         <Availability />
-        <Work />
-        <Info />
+        {/* <Work />
+        <Info /> */}
         <Contact />
       </Layout>
     </DarkProvider>
