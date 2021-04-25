@@ -89,7 +89,7 @@
     margin-right: 2rem;
 
     @include medium {
-      margin-left: none;
+      margin-left: 0;
     }
   }
 
