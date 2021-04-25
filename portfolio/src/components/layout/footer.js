@@ -33,7 +33,7 @@ const Footer = () => {
             href="https://github.com/danbergelt/portfolio-site"
             id={dark ? "dark-site-source-link" : "site-source-link"}
           >
-            source code
+            code
           </a>
         </div>
       </nav>
