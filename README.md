@@ -1,3 +1,3 @@
 # site
 
-[https://danbergelt.com](https://danbergelt.com)
+[danbergelt.com](https://danbergelt.com)
